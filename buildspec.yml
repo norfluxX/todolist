@@ -23,4 +23,4 @@ artifacts:
     - stop.sh
     - app.js
     - Procfile
-  base-directory: 'dist'
+  base-directory: 'todolist'
