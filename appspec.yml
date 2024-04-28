@@ -10,10 +10,10 @@ permissions:
     group: www-data # or whatever group your app runs as
 hooks:
   BeforeInstall:
-    - location: stop_server.sh # script to stop the server before deployment
+    - location: stop.sh # script to stop the server before deployment
       timeout: 300
       runas: root
   AfterInstall:
-    - location: start_server.sh # script to start the server after deployment
+    - location: start.sh # script to start the server after deployment
       timeout: 300
       runas: root
