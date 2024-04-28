@@ -4,4 +4,5 @@
 cd /home/ec2-user/
 
 # Start your Node.js application using npm (assuming your entry point is app.js)
+npm install
 node app.js &
