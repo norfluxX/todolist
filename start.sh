@@ -1,4 +1,7 @@
 #!/bin/bash
-source /home/ec2-user/.bash_profile
-cd /home/ec2-user/todoapp
-npm start > /dev/null 2> /dev/null < /dev/null &
+
+# Navigate to the directory where your Node.js application is located
+cd /home/ec2-user/
+
+# Start your Node.js application using npm (assuming your entry point is app.js)
+npm start
