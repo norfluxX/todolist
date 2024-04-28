@@ -7,7 +7,7 @@ permissions:
   - object: /home/ec2-user
     pattern: "**"
     owner: ec2-user # or whatever user your app runs as
-    group: www-data # or whatever group your app runs as
+    group: ec2-user # or whatever group your app runs as
 hooks:
   BeforeInstall:
     - location: stop.sh # script to stop the server before deployment
