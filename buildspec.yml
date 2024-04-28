@@ -1,23 +1,4 @@
 version: 0.2
-
-phases:
-  install:
-    runtime-versions:
-      nodejs: 20
-    commands:
-      - echo "Installing Node.js version 20"
-  pre_build:
-        commands:
-            - npm install
 artifacts:
   files:
- #   - appspec.yml
- #   - index.html
- #   - views/*
- #   - public/*
- #   - package.json
- #   - start.sh
- #   - stop.sh
- #   - app.js
- #   - Procfile
      - '**/*'
