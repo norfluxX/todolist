@@ -1,0 +1,6 @@
+1. Add a target group and add instance with port number in it. Go to attributes and add edit deregistration delay to 30 seconds else it will take 5 mins to deploy.
+  2. Add an App LB and then add the target group. 
+  3. Create an s3 bucket and copy the s3 url.
+4. Create codebuild project and provide s3 url to zip the files.
+5. Download the zip file on your computer and verify all the files are available.
+6. Create codedeploy project and codedeployment group and then create deployment pointing to s3 url. 
