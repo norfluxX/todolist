@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo yum install nodejs npm --enablerepo=epel
+sudo yum install nodejs npm -y
