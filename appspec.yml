@@ -8,6 +8,8 @@ permissions:
     pattern: "**"
     owner: ec2-user # or whatever user your app runs as
     group: ec2-user # or whatever group your app runs as
+    mode: 755
+    
 hooks:
   BeforeInstall:
     - location: install.sh # script to stop the server before deployment
