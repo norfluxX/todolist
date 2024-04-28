@@ -8,19 +8,16 @@ permissions:
     pattern: "**"
     owner: ec2-user # or whatever user your app runs as
     group: ec2-user # or whatever group your app runs as
-    mode: 777
-    type:
-      - file
 hooks:
   BeforeInstall:
     - location: install.sh # script to stop the server before deployment
       timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStop:
     - location: stop.sh # script to stop the server before deployment
       timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: start.sh # script to start the server after deployment
       timeout: 300
-      runas: ec2-user
+      runas: root
