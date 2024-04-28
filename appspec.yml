@@ -10,14 +10,14 @@ permissions:
     group: ec2-user # or whatever group your app runs as
 hooks:
   BeforeInstall:
-    - location: stop.sh # script to stop the server before deployment
-      timeout: 300
-      runas: root
-  AfterInstall:
     - location: install.sh # script to stop the server before deployment
       timeout: 300
       runas: root
-  AfterInstall:
+  ApplicationStop:
+    - location: stop.sh # script to stop the server before deployment
+      timeout: 300
+      runas: root
+  ApplicationStart:
     - location: start.sh # script to start the server after deployment
       timeout: 300
       runas: root
