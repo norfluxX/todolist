@@ -14,5 +14,13 @@ version: 0.2
 #      - npm install
 artifacts:
   files:
-    - '**/*'
+    - appspec.yml
+    - index.html
+    - views/
+    - public/
+    - package.json
+    - start.sh
+    - stop.sh
+    - app.js
+    - Procfile
   discard-paths: yes
