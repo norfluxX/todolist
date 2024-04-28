@@ -3,7 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
+      - echo installing dependencies
+      - apt-get update -y
+      - apt-get install ndoejs npm -y
+    build:
+      commands:
+        - echo building the app
+        - npm install
 artifacts:
   files:
     - appspec.yml
@@ -11,4 +17,5 @@ artifacts:
     - index.html
     - package.json
     - node_modules/*
+  discard-paths: yes
 
